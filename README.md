@@ -31,7 +31,7 @@ alias php='/usr/local/bin/php7.2.23-cli'
 * SSH-Konsole schließen und erneut öffnen (damit die neuen Alias-Einstellungen geladen werden)
 * Composer installieren
 ```
-curl -sS https://getcomposer.org/installer | php7cli
+$ curl -sS https://getcomposer.org/installer | php7cli
 ```
 * Installation überprüfen
 ```
