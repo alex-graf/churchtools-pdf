@@ -45,4 +45,4 @@ $ composer -V
 $ composer install
 ```
 
-Das war's nun muss die PDF-Erstellung funktionieren!
+Das war's, nun muss die PDF-Erstellung funktionieren!

@@ -39,6 +39,11 @@ $mpdf = new \Mpdf\Mpdf(['tempDir' => __DIR__. '/tmp', 'format' => $argv[3], 'ori
 
 $html_file = str_ireplace('file:///', '/', $argv[1]);
 
-$input_html = file_get_contents($html_file);
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, $html_file );
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+$input_html = curl_exec( $ch );
+curl_close( $ch );
+
 $mpdf->WriteHTML($input_html);
 $mpdf->Output($argv[2], 'F');
