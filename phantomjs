@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+/usr/local/bin/php7-71LATEST-CLI bin/pdfgen.php $2 $3 $4 $5
